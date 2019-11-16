@@ -1,0 +1,24 @@
+<% include partials/_header %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card form">
+                <div class="card-body">
+                    <form action="/update-provider/<%= data.id %>" method="POST">
+                        <div class="form-group">
+                            <input class="form-control m-1" type="text" name="name" value="<%= data.provider_name %>">
+                            <input class="form-control m-1" type="text" name="phone" value="<%= data.provider_phone %>">
+                            <input class="form-control m-1" type="text" name="email" value="<%= data.provider_email %>">
+                            <input class="form-control m-1" type="text" name="location" value="<%= data.provider_location %>">
+                        </div>
+                        <button type="submit" class="btn btn-primary m-1">Edit provider</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<% include partials/_footer %>

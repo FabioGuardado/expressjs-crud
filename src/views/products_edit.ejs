@@ -1,0 +1,39 @@
+<% include partials/_header %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body form">
+                    <form action="/update-product/<%= data.id %>" method="POST">
+                        <div class="form-group">
+                            <input class="form-control m-1" type="text" name="name" value="<%= data.name %>">
+                            <select class="form-control m-1" name="Category" id="">
+                                <option value="<%= data.category_id %>" selected hidden ><%= data.category_id %></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <select class="form-control m-1" name="Provider" id="">
+                                <option value="<%= data.provider_id %>" selected hidden ><%= data.provider_id %></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <input class="form-control m-1" type="text" name="price" value="<%= data.price %>">
+                            <input class="form-control m-1" type="text" name="stock" value="<%= data.stock %>">
+                        </div>
+                        <button type="submit" class="btn btn-primary m-1">Edit product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<% include partials/_footer %>

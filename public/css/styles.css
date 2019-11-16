@@ -1,0 +1,65 @@
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+}
+.navbar-nav .home{
+    font-size: 24px;
+    color: #4cb050;
+    padding: 7px 12px 7px 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 10px -17px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 10px 10px -17px rgba(0,0,0,0.62);
+    box-shadow: 10px 10px 10px -17px rgba(0,0,0,0.62);
+    transition: 0.2s all ease-in;
+}
+.home:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.2s all ease-out;
+    cursor: pointer;
+}
+.container{
+    margin-bottom: 40px;
+}
+.margin-elements{
+    margin: 60px 0px 60px 0px;
+}
+.card-body{
+    font-family: 'Lobster', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-body h1{
+    font-size: 48px;
+}
+.cards-wrapper{
+    -webkit-box-shadow: 10px 10px 14px -11px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 10px 14px -11px rgba(0,0,0,0.62);
+    box-shadow: 10px 10px 14px -11px rgba(0,0,0,0.62);
+    transition: 0.2s all ease-in;
+}
+.cards-wrapper:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.2s all ease-out;
+}
+.form .card-body,
+table thead th,
+table tbody td{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+@media (min-width: 768px){
+    .cards-wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    .card-image-side img{
+        height: 200px;
+        max-height: 200px !important;
+        object-fit: cover;
+    }
+    .card-content-wrapper .card-body{
+        height: 200px;
+        max-height: 200px !important;
+    }
+}
